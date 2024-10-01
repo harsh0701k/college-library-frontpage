@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABESIT College Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center; /* Center-align all text */
+        }
+
+        header {
+            background-color: #1a237e;
+            color: white;
+            padding: 20px;
+        }
+
+        .animated-title {
+            font-size: 24px;
+            color: #ff9800; /* Orange color */
+            animation: slideIn 3s ease-in-out infinite alternate; /* Animation */
+            margin-bottom: 10px; /* Space below the animated title */
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-20px); /* Start position */
+                opacity: 0; /* Start invisible */
+            }
+            100% {
+                transform: translateY(0); /* End position */
+                opacity: 1; /* End visible */
+            }
+        }
+
+        .nav {
+            margin: 20px 0; /* Space around navigation links */
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1a237e;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #1a237e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="animated-title">Online Book Store</div>
+    <h1>ABESIT College Library</h1>
+</header>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="catalogue.html">Catalogue</a>
+</div>
+
+<div class="container">
+    <h2>Welcome to the ABESIT College Library!</h2>
+    <p>Your gateway to a vast collection of knowledge.</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 ABESIT College. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

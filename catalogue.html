@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a237e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e8eaf6;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #1a237e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3949ab;
+            color: white;
+        }
+
+        input[type="submit"] {
+            background-color: #3949ab;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5c6bc0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Library Catalogue</h1>
+</header>
+
+<div class="container">
+    <h2>Available Books</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Introduction to Algorithms</td>
+                <td>Thomas H. Cormen</td>
+                <td>CSE</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Digital Signal Processing</td>
+                <td>John G. Proakis</td>
+                <td>ECE</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Electric Machines</td>
+                <td>Charles Kingsley</td>
+                <td>EE</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Advanced Control Systems</td>
+                <td>B. C. Kuo</td>
+                <td>M.Tech</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="submit_catalogue.php" method="POST">
+        <input type="submit" value="Request a Book">
+    </form>
+</div>
+
+</body>
+</html>
+
